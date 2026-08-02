@@ -1,28 +1,21 @@
-# Loop Budget — loop-engineering (reference repo)
+# Loop Budget — Personal Fork (beshr11)
 
-> Dogfood file for the patterns that maintain this repository.
+## Daily limits (conservative starting point)
 
-## Daily limits
-
-| Loop | Max runs/day | Max tokens/day | Max sub-agent spawns/run |
-|------|--------------|----------------|--------------------------|
-| Daily Triage | 1 | 100k | 0 (L1) |
-| Validate/Audit (CI) | 96 | 500k | 0 |
-| Changelog Drafter | 1 | 100k | 2 |
+| Loop            | Max runs/day | Max tokens/day | Max sub-agents |
+|-----------------|--------------|----------------|----------------|
+| Daily Triage    | 3            | 150k           | 0 (L1)         |
+| Any other loop  | 1            | 80k            | 1              |
 
 ## On budget exceed
-
-1. Pause schedulers / disable high-cadence workflows
-2. Append event to `loop-run-log.md`
-3. Open maintainer issue
+1. Switch to report-only
+2. Log the event
+3. Notify human
 
 ## Kill switch
+Set `loop-pause-all` in STATE.md or add the label on GitHub.
 
-- Label: `loop-pause-all`
-- Resume only after cleared in `STATE.md`
-
-## Estimate spend
-
+## Estimate
 ```bash
 npx @cobusgreyling/loop-cost --pattern daily-triage --level L1
 ```
