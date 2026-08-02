@@ -1,22 +1,28 @@
-# Loop State — loop-engineering reference
+# Loop State — beshr11/loop-engineering (Personal Fork)
 
-Last run: 2026-07-31T08:57:49Z (automated daily-triage workflow)
+Last run: 2026-08-02T02:14:00Z
 
 ## High Priority (loop is acting or waiting on human)
 
-- Maintain loop readiness score ≥ 58 (current: **100**, level **L3**).
-- Keep npm packages current after tool changes (tag `loop-audit-v*`, `loop-init-v*`, `loop-cost-v*` — see docs/RELEASE.md).
-
+_None_
 
 ## Watch List
 
-- Expand contributor failure stories (dependency sweeper, multi-loop).
-- Collect a production story for Post-Merge Cleanup.
-- Validate `loop-init` scaffolds on fresh projects across all patterns.
+- Maker ↔ Checker pair now complete
+  - Maker:  minimal-fix
+  - Checker: loop-verifier
+- Ready score remains **100/100 L3**
+- Optional next: add loop-constraints skill formally
 
 ## Recent Noise (ignored this run)
 
 —
 
+## Post-Run Critique
+
+- Official minimal-fix skill installed
+- Full adversarial verification chain is now available
+- Report-only mode still active
+
 ---
-Run log: Updated by `.github/workflows/daily-triage.yml`. See `LOOP.md` for cadence and gates.
+Run log: see loop-run-log.md
