@@ -1,6 +1,5 @@
 # Machine-readable twin of docs/safety.md's Path Denylist and Auto-Merge
-# Policy sections. Used by tools/loop-gate. Keep in sync with docs/safety.md
-# when either changes.
+# Policy sections. Used by tools/loop-gate.
 version: 1
 
 denylist:
